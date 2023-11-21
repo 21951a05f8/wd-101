@@ -39,11 +39,11 @@ const displayUserRecords = () =>{
 
 const saveUserFormDetails = (event) =>{
     event.preventDefault();
-    const name = document.getElementById('user-name').value;
-    const email = document.getElementById('user-email').value;
-    const password = document.getElementById('user-password').value;
-    const dob = document.getElementById('user-dob').value;
-    const acceptTerms = document.getElementById('accept-terms').checked;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const dob = document.getElementById('dob').value;
+    const acceptTerms = document.getElementById('acceptTermsandConditions').checked;
 
     const record = {
         name,
@@ -63,7 +63,7 @@ form.addEventListener("submit", saveUserFormDetails);
 displayUserRecords();
 
 document.addEventListener("DOMContentLoaded", function() {
-    var inputDOB = document.getElementById('user-dob');
+    var inputDOB = document.getElementById('dob');
     var minDOB = new Date('1967-11-09');
     var maxDOB = new Date('2004-11-09');
   
